@@ -1,0 +1,27 @@
+TARGET = test
+INCLUDE = -I. 
+LDFLAGS =
+FLAGS_OPTS = -O2 $(INCLUDE)
+C_COMPILE = cc
+C_FLAGS = $(FLAGS_OPTS)
+CPP_COMPILE = c++
+CPP_FLAGS = $(FLAGS_OPTS)
+LINK = c++ -o
+LINK_OPTS = -L. $(LDFLAGS)
+CONSOLE_LINK_OPTS = $(LINK_OPTS)
+ORG_DIR = 
+ORG_LIB = 
+LOCAL_LIBS = $(ORG_LIB)
+LIBS = $(LOCAL_LIBS)
+AR = ar cr
+RM = rm -rf
+OBJS = main.o
+
+$(TARGET) : $(OBJS)
+	$(LINK) $(TARGET) $(OBJS) $(CONSOLE_LINK_OPTS) $(LIBS)
+
+$(OBJS) : %.o : %.cpp
+	$(CPP_COMPILE) -c $(CPP_FLAGS) $< -o $@
+
+clean :
+	-$(RM) $(TARGET) $(OBJS)
