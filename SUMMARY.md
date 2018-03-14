@@ -7,4 +7,5 @@
     * [2.1 string类](ch2/sect1.md)
     * [2.2 智能指针模板类](ch2/sect2.md)
     * [2.3 标准模板库](ch2/sect3.md)
+    * [2.4 泛型编程](ch2/sect4.md)
 
