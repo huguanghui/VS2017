@@ -10,4 +10,7 @@
     * [2.4 泛型编程](ch2/sect4.md)
 * [第3章 WPF学习入门](ch3/README.md)
     * [3.1 经典源码学习](ch3/sect1.md)
+* [第4章 VS2017上调试LinuxC++](ch4/README.md)
+    * [4.1 调试流程](ch4/sect1.md)
+    * [4.2 实例](ch4/sect2.md)
 
